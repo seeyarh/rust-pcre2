@@ -23,5 +23,7 @@ PCRE2 regular expressions for matching on arbitrary bytes.
 */
 pub mod bytes;
 mod error;
+mod expand;
 mod ffi;
+mod find_bytes;
 mod pool;
