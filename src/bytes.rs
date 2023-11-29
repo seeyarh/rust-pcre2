@@ -577,7 +577,7 @@ impl Regex {
                     Err(_err) => break,
                 }
             }
-            new.extend_from_slice(&text[last_match..]);
+            //new.extend_from_slice(&text[last_match..]);
             return Cow::Owned(new);
         }
 
@@ -604,7 +604,7 @@ impl Regex {
                 Err(_err) => break,
             }
         }
-        new.extend_from_slice(&text[last_match..]);
+        //new.extend_from_slice(&text[last_match..]);
         Cow::Owned(new)
     }
 
